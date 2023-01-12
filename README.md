@@ -19,14 +19,12 @@ the help of statistical summary and graphical representations.
 
 ● Data Visualisation (Visualize relationships in data using different types of plots).
 
-### Python Libraries for EDA
-Pandas is the most commonly used library for data analysis 
-in python. There are tons of libraries available in python for data visualization 
-and among them, matplotlib is the most commonly used. Matplotlib provides 
-full control over the plot to make plot customisation easy,but what it lacks is 
-built-in support for pandas. Seaborn is a data visualization library built on top of matplotlib 
-and closely integrated with pandas.
+### About IPL Dataset
+Indian Premier League(IPL) is a professional Twenty 20 cricket league in India contested 
+during March or April and May of every year by eight teams representing eight 
+different cities in India.The league was founded by the Board of Control for Cricket 
+in India (BCCI) in 2008.
 
-For more information on the EDA Librarie
-s refer to the Official Documentations.
-
+The data set that is going to be used is 'IPL Matches Dataset'.It contains IPL matches 
+data from 2008 to 2019,we are going to clean the data if required and perform Exploratory Data Analysis(EDA).
+The tools that are going to be used for the EDA would be numpy, pandas, matplotlib and seaborn.
