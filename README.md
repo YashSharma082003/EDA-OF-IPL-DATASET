@@ -14,7 +14,7 @@ analyze the data using visual techniques.
 It is used to discover trends, patterns, or to check assumptions with 
 the help of statistical summary and graphical representations.
 
-### Steps invloved in EDA  :-
+### Steps involved in EDA  :-
 ●  Data Analysis (Data Pre processing, Cleaning and Manipulation).
 
 ●  Data Visualisation (Visualize relationships in data using different types of plots).
