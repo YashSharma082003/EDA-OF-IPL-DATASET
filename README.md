@@ -27,4 +27,4 @@ in India (BCCI) in 2008.
 
 The data set that is going to be used is the 'IPL Matches Dataset'.It contains IPL matches 
 data from 2008 to 2019, we are going to clean the data if required and perform Exploratory Data Analysis(EDA).
-The tools that are going to be used for the EDA would be NumPy, Pandas, matplotlib and seaborn.
+The tools that are going to be used for the EDA would be NumPy, Pandas, Matplotlib and Seaborn.
