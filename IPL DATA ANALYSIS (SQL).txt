@@ -1,0 +1,102 @@
+# QUSETIONS 
+
+## Query our Dataset
+
+select *
+from `IPL_DATASET.Data`
+
+Q1 Number of matches played in each IPL season.
+
+select Season, count(Season)
+from `IPL_DATASET.Data`
+group by Season
+order by Season
+
+
+Q2 Toss Winner(Team winning most tosses) across all IPL seasons.
+
+select toss_winner,count(toss_winner) as toss_winning_team
+from `IPL_DATASET.Data`
+group by 1
+order by toss_winning_team desc
+
+
+Q3 Toss Decision(Bat or to Field)in each IPL seasons.
+
+select Season, count(toss_decision)
+from `IPL_DATASET.Data`
+where toss_decision = 'bat'
+group by Season
+order by Season
+
+select Season,count(toss_decision)
+from `IPL_DATASET.Data`
+where toss_decision = "field"
+group by Season
+order by Season
+
+
+Q4 Top 10 Most frequently used stadiums across all IPL seasons.
+
+select venue, count(venue) as count_venue
+from `IPL_DATASET.Data`
+group by venue
+order by count_venue desc
+limit 10
+
+
+Q5 Top 7 Cities that hosted most IPL matches across all seasons.
+
+select city, count(city) as count_city
+from `IPL_DATASET.Data`
+group by city
+order by count_city desc
+limit 7;
+
+
+
+Q6 Top 5 Umpire1 who were to evaluate different matches across all IPL Seasons.
+
+select umpire1, count(umpire1) as umpire_1
+from `IPL_DATASET.Data`
+group by umpire1
+order by umpire_1 desc
+limit 5;
+
+
+Q7 Top 5 Team that won the most matches across all the IPL Seasons.
+
+select winner, count(winner) as winner_1
+from `IPL_DATASET.Data`
+group by winner
+order by winner_1 desc
+limit 5;
+
+
+Q8 Top 8 Percentage distribution of different winning teams across all the IPL Seasons.
+
+select winner, count(winner) as winner_1
+from `IPL_DATASET.Data`
+group by winner
+order by winner_1 desc
+limit 5;
+
+
+Q9 Top 7 players with most Player of the Match awards.
+
+select player_of_match, count(player_of_match) as players
+from `IPL_DATASET.Data`
+group by player_of_match
+order by players desc
+limit 5;
+
+
+Q10 Win Toss to the game.
+
+select count(*)
+from `IPL_DATASET.Data`
+where toss_winner = winner  
+
+select count(*)
+from `IPL_DATASET.Data`
+where toss_winner != winner
